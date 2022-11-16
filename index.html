@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100"> <!-- 2022-11-04, DMW, added class. -->
+<!--
+     Author:
+    Created:    2022-10-26
+    Purpose:    Template index-org.html for simple websites
+     Course:    2022 Fall, CSC186 Intro to Web Development; Sections 10129, 10130
+
+    History:
+                2022-11-04, DMW, updated for fixed footer.
+                2022-10-26, DMW, created.
+
+    Notes:      2022-10-26, DMW, Bootstrap can be found here: https://getbootstrap.com/
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- 2022-11-04, DMW, added line. -->
+    <title id="app-title"></title>
+    <!-- 2022-10-26, DMW, CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="website.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="style_bfco.css" rel="stylesheet" type="text/css">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="robots" content="all">
+    <meta name="description" content="Reaching out to Bereans in need">
+    <meta name="keywords" content="BFCO, berea, kentucky, madison, faith, community, charity, outreach, hunger, food, BUURR, utility, utilities, rent, Frank, Gailey, transient, aid, relief, pantry">
+    <meta name="owner" content="Berea Faith Community Outreach">
+    <meta name="author" content="Berea Faith Community Outreach">
+
+    <script type="text/javascript">
+        var image1=new Image()
+        image1.src="./images/food_drive/g1.jpg"
+        var image2=new Image()
+        image2.src="./images/food_drive/g2.jpg"
+        var image3=new Image()
+        image3.src="./images/food_drive/g3.jpg"
+        var image4=new Image()
+        image4.src="./images/food_drive/g4.jpg"
+        var image5=new Image()
+        image5.src="./images/food_drive/g5.jpg"
+        var image6=new Image()
+        image6.src="./images/food_drive/g6.jpg"
+        var image7=new Image()
+        image7.src="./images/food_drive/g7.jpg"
+        var image8=new Image()
+        image8.src="./images/food_drive/g8.jpg"
+        var image9=new Image()
+        image9.src="./images/food_drive/g9.jpg"
+    </script>
+
+
+</head>
+<body class="d-flex flex-column h-100"> <!-- 2022-11-04, DMW, added class. -->
+
+<!-- The header section holds the program generated navigation bar -->
+<header id="header">
+</header> <!-- end of header that holds the navigation bar -->
+
+<!-- Begin page content -->
+<main class="flex-shrink-0" style="margin-top: 60px;"> <!-- 2022-11-04, DMW, added line. -->
+    <div class="container" style="margin-bottom: 60px;"> <!-- 2022-11-04, DMW, added line. -->
+
+        <table id="outer">
+            <tbody><tr><td>
+
+                <!-- <div class="floater">
+                   <h4>Current Food Bank Needs</h4>
+                   <ul>
+                    <li>Vegetable oil</li>
+                    <li>Fruit juice</li>
+                    <li>Canned tuna</li>
+                    <li>Canned fruit</li>
+                   </ul>
+                   <i>Donations can be placed on the front porch of the Food Bank.<br>Thank you!</i>
+                   </div> -->
+
+                <img src="images/BFCOLogo.gif" alt="Berea Faith Community Outreach" width="500">
+            </td></tr>
+            <tr><td>
+                <table id="navbar">                 <!--  NAVIGATION BAR  -->
+                    <tbody><tr>
+                        <!-- <td><a href="./index-org.html">&nbsp;Home&nbsp;</a></td> -->
+                        <td><a href="http://www.bereaoutreach.org/buurr.html">&nbsp;Utility/Rent Assistance&nbsp;</a></td>
+                        <td><a href="http://www.bereaoutreach.org/food.html">&nbsp;Food Bank&nbsp;</a></td>
+                        <td><a href="http://www.bereaoutreach.org/taf.html">&nbsp;Transient Aid&nbsp;</a></td>
+                        <td><a href="http://www.bereaoutreach.org/about.html">&nbsp;About us&nbsp;</a></td>
+                        <td><a href="http://www.bereaoutreach.org/support.html">&nbsp;Support us&nbsp;</a></td>
+                    </tr>
+                    </tbody></table>
+            </td></tr>
+            <tr><td>
+
+                <table id="main">
+
+                    <tbody><tr><td>
+
+                        <img src="images/g3.jpg" name="slide" style="width:660px" alt="" title="Neighbors helping neighbors">
+
+
+                        <!-- BEGIN ROTATING PHOTOS  -->
+                        <script>
+                            <!--
+                            //variable that will increment through the images
+                            var step=1
+                            function slideit(){
+//if browser does not support the image object, exit.
+                                if (!document.images)
+                                    return
+                                document.images.slide.src=eval("image"+step+".src")
+                                if (step<9)
+                                    step++
+                                else
+                                    step=1
+//call function "slideit()" every 5 seconds
+                                setTimeout("slideit()",5000)
+                            }
+                            slideit()
+                            // -->
+                        </script>
+                        <!-- END ROTATING PHOTOS -->
+
+
+                        <br>
+
+                        <!--  <div style="padding: 5px; border: 4px dotted orange; border-radius: 20px; background-color: rgba(153, 204, 255, 0.1); margin-left: auto; margin-right: auto; width: 80%">
+
+                        <p style="font-size: 120%; color: #990000; ">Please be aware that during the current public health crisis, the <a href="./food.html">Berea Food Bank</a> is open during our regular hours.</p>
+
+                        <p style="font-size: 110%; color: #990000; ">Our dedicated all-volunteer staff remains committed to serving the needs of our community during this trying time.</p>
+
+                        <p style="font-size: 110%; color: #990000; ">We are instituting CDC-recommended sanitizing guidelines and other procedures in addition to our normal cleaning routines.</p>
+
+                        <p style="font-size: 110%; color: #990000; ">We are no longer accepting individual grocery items from our many community supporters and ask that you consider a <a href="./support.html">monetary donation</a> of any amount instead.</p>
+
+                        <p style="font-size: 110%; color: #990000; ">We are certain we'll get through this difficult time together.</p>
+                        <p style="font-style: italic; color: black; text-align:center;">March 14, 2020</p>
+                        </p>
+                        </div>  -->
+
+                        <!-- <div style="padding: 5px; border: 4px dotted orange; border-radius: 20px; background-color: rgba(153, 204, 255, 0.1); margin-left: auto; margin-right: auto; width: 80%">
+
+                        <p style="font-size: 110%; color: #990000; "><b>W</b>e'll do the work but we need your help. With just 7 days remaining in our biggest fundraiser of the year we are asking you to make a donation to the 28th Annual Berea College CELTS Program's Hunger Hurts campaign today. You see, in Winter we see a doubling of food insecurity in our area and we are committed to being ready to meet the needs of our community.</p>
+
+                        <p style="font-size: 105%; color: #990000; ">Every dollar donated goes far. We can buy thirty pounds of rice for about 5 dollars, twenty-four boxes of macaroni and cheese for $7, a dozen jars of spaghetti sauce for $6, and peanut butter for less than a dollar a jar. And we are very carful with your donations--our low administrative costs mean that 99 cents of every dollar donated goes directly to purchase food. 99 cents of every dollar.</p>
+
+                        <p style="font-size: 105%; color: #990000; ">Our incredible volunteers work hard:
+                        <ul style="padding-right: 50px">
+                        <li style="font-size: 105%; color: #990000; ">distributing about a week's groceries to clients at the food bank 3 days a week;</li>
+                        <li style="font-size: 105%; color: #990000; ">bringing hundreds of pounds of fresh produce to residents of three Afflordable Housing Communities every Friday;</li>
+                        <li style="font-size: 105%; color: #990000; ">stocking shelves, loading bags and boxes, cleaning at the end of each shift, and meeting our delivery truck twice a month to move our orders into the food bank.</li>
+                        </ul>
+                        </p>
+
+                        <img src="./images/volunteers.png" style="width: 85%; border: 2px solid black;" alt="Food Bank volunteers" title="photos: Don Cardwell">
+
+                        <p style="font-size: 105%; color: #990000; ">It's hard work. And we're happy to do it, honored to serve, and steadfast in our mission.</p>
+
+                        <p style="font-size: 110%; color: #990000; "><b>Please help</b> by mailing a check to Berea Food Bank, 108 Parkway Avenue, Berea KY 40403 or <a href="./support.html" style="font-weight: bold;">donate online</a>. So much depends on you. Right now. Give as generously a you can.</p>
+
+                        <div style="margin-left: auto; margin-right: auto; width: 90%;">
+                        <span style="margin-left:auto; margin-right:auto;">
+                        <i><br>Together with our Berea community friends and neighbors, <br>we are able to help many in need.  Thank you!</i>
+                        </span>
+                        </div>  -->
+
+
+                        <!--  <div style="padding: 5px; border: 4px dotted orange; border-radius: 20px; background-color: rgba(153, 204, 255, 0.1); margin-left: auto; margin-right: auto; width: 80%">
+
+                        <p style="color: #990000; ">Now until end of February 2022</p>
+
+                        <p style="font-size: 110%; color: #990000; ">Utility assistance payments available from LIHEAP administered by <a href="https://foothillscap.org/" target="_blank">Kentucky River Foothills</a>. </p>
+
+                        <p style="font-size: 110%; color: #990000; ">You can call 859.624.2046 but their phones are incredibly busy and you'll probably have to leave a message.  They often do not reply to messages &ndash; they're that busy.  Or visit their <a href="https://foothillscap.org/" target="_blank">website</a> and make an appointment. </p>
+
+                        <p style="font-size: 110%; color: #990000; ">We urge anyone in need of assistance in Madison County to reach out to their utility provider and Kentucky River Foothills immediately.  Funds are limited, don't delay.</p>
+
+                        </div>  -->
+
+
+
+
+                        <p></p>
+
+
+
+
+                        <br>&nbsp;<br>
+
+                        <br>
+                    </td></tr>
+
+                    </tbody></table>  <!-- End Main Table -->
+
+            </td></tr>
+            <tr><td>
+
+                <h5>108 Parkway Ave., Berea, KY&nbsp;<img src="images/bullet_yellow.png">&nbsp;859-985-1903
+                    <br>
+                    <a href="mailto:info@bereaoutreach.org">&nbsp;info@bereaoutreach.org&nbsp;</a></h5>
+                <br>
+                <a class="icon" href="http://www.facebook.com/BereaOutreach" target="_blank"><img src="images/facebook_32.png" style="width:32px" alt="Find us on Facebook" title="Find us on Facebook"></a>
+                <img src="images/transparent.gif" style="width:30px">
+                <a class="icon" href="http://www.youtube.com/user/bereaoutreach" target="_blank"><img src="images/youtube-logo.png" style="width:32px" alt="Find us on YouTube" title="Find us on YouTube"></a>
+                <img src="images/transparent.gif" style="width:30px">
+                <a class="icon" href="http://bereaoutreach.org/support.html#donate" target="_blank"><img src="images/paypallogo.jpg" style="height:32px" alt="Donate to BFCO using PayPal" title="Donate to BFCO using PayPal"></a>
+                <br><br>
+                <h6>Berea Faith Community Outreach, Inc. works for social justice in our
+                    community through direct service, education, and advocacy, striving to
+                    assure everyone’s access to basic goods and services.</h6>
+                <br>
+                <h6>Website last updated September 27, 2022</h6>
+                <br>
+                <div class="copyright">© 2010 - 2022  Berea Faith Community Outreach, Inc.</div>
+                <p>&nbsp;</p>
+
+            </td></tr></tbody></table>
+
+
+    </div> <!-- end of container for main page content -->
+</main> <!-- end of main section -->
+
+<!-- 2022-11-04, DMW, added footer section. -->
+<footer class="footer mt-auto py-2 bg-light position-fixed">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6" style="text-align: center;">
+                <span class="text-muted" id="span-address"></span>
+            </div>
+            <div class="col-sm-6" style="text-align: center;">
+                <span class="text-muted" id="span-copyright"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+<script src="navigation.js"></script>
+<script src="website.js"></script>
+
+</body>
+</html>
