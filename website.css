@@ -20,7 +20,32 @@
 
 /* 2022-11-07, DMW, make the navigation bar the width of the client */
 nav {
+    height: 50px;
     width: 100%;
+    text-align: center;
+}
+nav ul {
+    display: flex;
+    max-width: 100%; /* change to desired width */
+    /* removed height from here, apply to a elements */
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto; /* 0 auto allows it to self-center in the nav */
+    list-style-type: none;
+}
+
+nav li {}
+
+nav a {
+    display: inline-block;
+    height: 50px; /* apply the height here, pushes the li / ul to be the correct height */
+    line-height: 50px; /* to get vertical centering */
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 /* 2022-11-07, DMW, the no_ul class on anchor links causes the underline to not be shown */

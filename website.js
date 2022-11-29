@@ -13,14 +13,14 @@
 
 // ------------------------------------------------------------------------ SITE SPECIFIC INFORMATION
 
-const PHONE_NUMBER = "555-111-2222"; // the organization's phone number; leave blank to exclude from web page
-const PHONE_LINK_TEXT = "5551112222"; // this should have no dashes in it
-const ORG_NAME = "ORGANIZATION NAME"; // put the organization's name here, leave blank to not show
-const ORG_ADDRESS = "CITY, STATE, ZIPCODE"; // the organization's address, leave blank to not show
-const COPYRIGHT_BEGIN_YEAR = ""; // leave empty for only the current year
-const NAV_BAR_BUTTON_TEXT = "BUTTON"; // leave blank for no button
-const APP_BRAND = "BRAND"; // set the brand of your website
-const APP_TITLE = `${APP_BRAND}: MY APP`; // the name of your website or application
+const PHONE_NUMBER = "859-985-1903"; // the organization's phone number; leave blank to exclude from web page
+const PHONE_LINK_TEXT = "8599851903"; // this should have no dashes in it
+const ORG_NAME = "Berea Faith Community Outreach"; // put the organization's name here
+const ORG_ADDRESS = "Berea, Kentucky, 40403"; // the organization's address
+const COPYRIGHT_BEGIN_YEAR = "2010"; // leave empty for only the current year
+const NAV_BAR_BUTTON_TEXT = "DONATE"; // leave empty for no button
+const APP_BRAND = "BCFO"; // set the brand of your website
+const APP_TITLE = `${APP_BRAND}: Berea Faith Community Outreach`; // the name of your website or application
 
 // ------------------------------------------------------------------------ END OF SITE SPECIFIC INFORMATION
 

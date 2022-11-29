@@ -26,11 +26,29 @@ function setup_navigation() {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- collapsing menu items -->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item list-unstyled">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item list-unstyled">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="about.html">About Us</a>
                         </li>
+                        <li class="nav-item list-unstyled">
+                            <a class="nav-link" href="buurr.html">Utility/Rent Assistance</a>
+                        </li>
+                        <!-- place image in the middle of the nav bar -->
+                        
+                        
+                        
+                        
+                         <li class="nav-item list-unstyled">
+                            <a class="nav-link" href="support.html">Support Us</a>
+                        </li>
+                         <li class="nav-item list-unstyled">
+                            <a class="nav-link" href="taf.html">Transient Aid</a>
+                        </li>
+                         <li class="nav-item list-unstyled">
+                            <a class="nav-link" href="food.html">Food Bank</a>
+                        </li>
+                        
                         <!--
                         <li class="nav-item dropdown list-unstyled">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
