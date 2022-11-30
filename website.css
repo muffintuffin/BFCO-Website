@@ -8,19 +8,24 @@
                 2022-11-07, DMW, updated by removing unused and commented CSS; added no_ul class
                 2022-10-26, DMW, created.
 */
-
+body{
+    margin:0;
+}
+.wrapper {
+    height: 100vh;
+}
 /* 2022-11-04, DMW, added this class */
 .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 60px; /* Set the fixed height of the footer here */
-    line-height: 20px; /* the height of a line of text */
+    line-height: 60px; /* the height of a line of text */
 }
 
 /* 2022-11-07, DMW, make the navigation bar the width of the client */
 nav {
-    height: 50px;
+    height: 60px;
     width: 100%;
     text-align: center;
 }
@@ -38,16 +43,27 @@ nav ul {
 nav li {}
 
 nav a {
+    float: left;
+    padding: 12px;
     display: inline-block;
-    height: 50px; /* apply the height here, pushes the li / ul to be the correct height */
-    line-height: 50px; /* to get vertical centering */
+    height: 60px; /* apply the height here, pushes the li / ul to be the correct height */
+    line-height: 60px; /* to get vertical centering */
     color: white;
     font-size: 15px;
+    width: auto; /* width of items on the navbar */
+    text-align: center;
     font-weight: 100;
     text-decoration: none;
     transition: 0.3s;
 }
 
+.logo-image{ /* code for logo image properties */
+    width: 120%;
+    height: 120%;
+    border-radius: 100%;
+    overflow: visible;
+    margin-top: -6px;
+}
 /* 2022-11-07, DMW, the no_ul class on anchor links causes the underline to not be shown */
 a:link.no_ul {
     text-decoration: none;

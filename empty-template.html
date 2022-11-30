@@ -1,139 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100"> <!-- 2022-11-04, DMW, added class. -->
+<!--
+     Author:
+    Created:    2022-11-08
+    Purpose:    Template website html files for simple websites
+     Course:    2022 Fall, CSC186 Intro to Web Development; Sections 10129, 10130
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+    History:
+                2022-11-08, DMW, created.
+-->
 <head>
-    <title>Berea Faith Community Outreach: Food Bank</title>
-    <!-- Created July 2010 by Charles Wilton for BFCO -->
-
-    <link rel="shortcut icon" href="./images/favicon.ico">
-    <link href="./style_bfco.css" rel="stylesheet" type="text/css">
-
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    <meta name="robots" content="all">
-    <meta name="description" content="Reaching out to Bereans in need">
-    <meta name="keywords" content="BFCO, berea, kentucky, madison,
-faith, community, charity, outreach, hunger, food, BUURR, utility, utilities, 
-rent, Frank, Gailey, transient, aid, relief, pantry">
-    <meta name="owner" content="BFCO">
-    <meta name="author" content="BFCO">
-
-    <script type="text/javascript">
-        <!-- -->
-        var image1=new Image()
-        image1.src="./images/food_drive/f1.jpg"
-        var image2=new Image()
-        image2.src="./images/food_drive/f2.jpg"
-        var image3=new Image()
-        image3.src="./images/food_drive/f3.jpg"
-        var image4=new Image()
-        image4.src="./images/food_drive/f4.jpg"
-        var image5=new Image()
-        image5.src="./images/food_drive/f5.jpg"
-        var image6=new Image()
-        image6.src="./images/food_drive/f6.jpg"
-        image6
-        //-->
-    </script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- 2022-11-04, DMW, added line. -->
+    <title id="app-title">Title</title>
+    <!-- 2022-10-26, DMW, CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="website.css">
 </head>
+<body class="d-flex flex-column h-100"> <!-- 2022-11-04, DMW, added class. -->
 
+<!-- The header section holds the program generated navigation bar -->
+<header id="header">
+</header> <!-- end of header that holds the navigation bar -->
 
-</head>
-<body>
+<!-- Begin page content -->
+<main class="flex-shrink-0" style="margin-top: 60px;"> <!-- 2022-11-04, DMW, added line. -->
+    <div class="container" style="margin-bottom: 60px;"> <!-- 2022-11-04, DMW, added line. -->
+    </div> <!-- end of container for main page content -->
+</main> <!-- end of main section -->
 
-<table id="outer">
-    <tr><td>
-        <img src="./images/BFCOLogo.gif" height="250" alt="Berea Faith Community Outreach">
-    </td></tr>
-    <tr><td>
-        <table id="navbar">                 <!--  NAVIGATION BAR  -->
-            <tr>
-                <td><a href="index-org.html">&nbsp;Home&nbsp;</a></td>
-                <td><a href="./buurr.html">&nbsp;Utility/Rent Assistance&nbsp;</a></td>
-                <!-- <td><a href="./food.html">&nbsp;Food Bank&nbsp;</a></td> -->
-                <td><a href="./taf.html">&nbsp;Transient Aid&nbsp;</a></td>
-                <td><a href="./about.html">&nbsp;About us&nbsp;</a></td>
-                <td><a href="./support.html">&nbsp;Support us&nbsp;</a></td>
-            </tr>
-        </table>
+<!-- 2022-11-04, DMW, added footer section. -->
+<footer class="footer mt-auto py-2 bg-light position-fixed">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6" style="text-align: center;">
+                <span class="text-muted" id="span-address"></span>
+            </div>
+            <div class="col-sm-6" style="text-align: center;">
+                <span class="text-muted" id="span-copyright"></span>
+            </div>
+        </div>
+    </div>
+</footer>
 
-    </td></tr>
-    <tr><td>
-        <table id="main">
-            <tr><td>
-                <h1>Berea Food Bank</h1>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+<script src="navigation.js"></script>
+<script src="website.js"></script>
 
-                <div class="slide">
-                    <img src="./images/food_drive/f1.jpg" name="slide" style="border-style:solid;border-width:5px;width:250px" alt="CELTS Food Drive, November 2008" title="CELTS Food Drive, November 2008">
-                    <script>
-                        <!--
-                        //variable that will increment through the images
-                        var step=1
-                        function slideit(){
-//if browser does not support the image object, exit.
-                            if (!document.images)
-                                return
-                            document.images.slide.src=eval("image"+step+".src")
-                            if (step<6)
-                                step++
-                            else
-                                step=1
-//call function "slideit()" every 6 seconds
-                            setTimeout("slideit()",6000)
-                        }
-                        slideit()
-                        //-->
-                    </script>
-                </div>
-
-                <p>
-                    Individuals or families may receive a week's worth of groceries each month.
-                </p>
-
-                <p>Please bring the following with you in order to receive assistance from the Food Bank:</p>
-                <ul>
-                    <li>Driver's license or other photo ID;</li>
-                    <li>Piece of recent mail verifying your current address.</li>
-                </ul>
-                <!--                </p>-->
-                <br>
-                <div class="smallbox">
-                    <h4>Food Bank Hours</h4>
-                    <br>
-                    Monday: Noon &ndash; 2 PM<br>
-                    Wednesday: Noon &ndash; 2 PM<br>
-                    Friday: 10 AM &ndash; Noon
-                </div>
-
-                <br clear="all">
-
-                <p>
-                    Due to staffing cuts mandated by workplace social distancing guidelines, item donations are not accepted at this time.
-                    Please consider making an online monetary donation using our
-                    <a href="./support.html">secure donation page</a>.  Or you may mail a check to the address below.  Thank you for your support!
-                </p>
-                <figure>
-                    <img src="./images/foodbank.jpg" width="600" alt="Berea Food Bank" title="Berea Food Bank on Parkway Ave." style="border-style:solid;border-width:5px;margin-top:1em;">
-                    <figcaption>
-                        The Food Bank is located at <a href="https://www.google.com/maps/place/37%C2%B034'12.9%22N+84%C2%B017'41.7%22W/@37.5702452,-84.2971097,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d37.570241!4d-84.294921" target="_blank">108 Parkway Ave.</a>,  directly behind Berea City Hall.
-                    </figcaption>
-                </figure>
-            </td>
-            </tr>
-        </table>
-    </td></tr>
-    <tr><td>
-
-        <p>&nbsp;</p>
-        <h5>108 Parkway Ave., Berea, KY&nbsp;<img src="./images/bullet_yellow.png">&nbsp;859-985-1903
-            <br>
-            <a href="mailto:info@bereaoutreach.org">&nbsp;info@bereaoutreach.org&nbsp;</a></h5>
-        <br>
-        <h6>Berea Faith Community Outreach, Inc. works for social justice in our community through direct service, education, and advocacy, striving to assure everyone’s access to basic goods and services.</h6>
-        <br>
-        <div class="copyright">&copy; 2010 - 2022  Berea Faith Community Outreach, Inc.</div>
-        <p>&nbsp;</p>
-    </td></tr></table>
 </body>
 </html>
-
