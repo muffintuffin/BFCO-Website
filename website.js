@@ -78,6 +78,17 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
+function set_email_link() {
+    if (EMAIL !== "") {
+        const A_EMAIL_LINK = document.getElementById("a-email-link")
+        A_EMAIL_LINK.href = `tel:${EMAIL_LINK}`
+        A_EMAIL_LINK.hidden = false
+
+        const SPAN_EMAIL = document.getElementById("span-email");
+        SPAN_EMAIL.innerHTML = EMAIL;
+    }
+}
+
 function set_address() {
     const SPAN_ADDRESS = document.getElementById("span-address");
     SPAN_ADDRESS.innerHTML = ORG_ADDRESS;
@@ -103,6 +114,7 @@ function startup() {
     setup_navbar();
     set_copyright();
     set_address();
+    set_email_link()
     set_phone_link();
     set_title();
 }
